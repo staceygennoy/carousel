@@ -22,6 +22,8 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     var buttonInitialY: CGFloat!
     var buttonOffset: CGFloat!
     
+    
+    
     func keyboardWillShow(notification: NSNotification!) {
         
         
