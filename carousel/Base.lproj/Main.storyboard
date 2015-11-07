@@ -48,6 +48,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7C0-EU-WWE">
                                         <rect key="frame" x="20" y="1067" width="280" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="LfP-18-JE0" kind="push" id="ZQV-F5-gT9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -65,6 +68,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzV-VE-Y6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960" y="387"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="ssg-gg-7d0">
+            <objects>
+                <viewController id="LfP-18-JE0" customClass="LoginViewController" customModule="carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zoq-PX-DKT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tgq-G0-bKZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXi-WZ-y7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1ge-UH-lOs">
