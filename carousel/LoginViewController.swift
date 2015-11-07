@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         initialY = fieldParentView.frame.origin.y
-        offset = -50
+        offset = -100
 
         // Do any additional setup after loading the view.
         scrollView.contentSize = scrollView.frame.size
