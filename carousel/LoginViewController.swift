@@ -10,10 +10,15 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        scrollView.contentSize = scrollView.frame.size
+        scrollView.contentInset.bottom = 100
     }
 
     override func didReceiveMemoryWarning() {
