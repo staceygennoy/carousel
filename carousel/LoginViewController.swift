@@ -20,13 +20,49 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var signInButton: UIButton!
+    
+    @IBOutlet weak var signinIndicator: UIActivityIndicatorView!
+    
     @IBAction func didPressBackButton(sender: AnyObject) {
-        print("Did press back button")
+       // print("Did press back button")
     }
     
     @IBAction func didPressSignInButton(sender: AnyObject) {
-        print("Did press sign in button")
+       // print("Did press sign in button")
+        
+        // Start animating the activity indicator
+        signinIndicator.startAnimating()
+        
+        // Set the Button state to "Selected"
+        signInButton.selected = true
+        
+        // If both the email and password fields match what we are looking for...
+        if emailField.text == "Text we are looking for" && passwordField.text == "Other text we are looking for" {
+            // Delay for 2 second.
+            delay(2, closure: { () -> () in
+                // Stop animating the activity indicator.
+                self.signinIndicator.stopAnimating()
+                // Set the button state back to default, "Not Selected".
+                self.signInButton.selected = false
+                // perform the Segue to the next screen.
+                // self.performSegueWithIdentifier("yourSegue", sender: nil)
+            })
+            // Otherwise, email or password are incorrect so...
+        } else {
+            // Delay for 2 second
+            delay(2, closure: { () -> () in
+                // Stop animating the activity indicator.
+                self.signinIndicator.stopAnimating()
+                // Set the button state back to default, "Not Selected".
+                self.signInButton.selected = false
+                // Create and Show UIAlertController...see guide, Using UIAlertController
+            })
+        }
     }
+    
+
+    
     
     var fieldInitialY: CGFloat!
     var fieldOffset: CGFloat!

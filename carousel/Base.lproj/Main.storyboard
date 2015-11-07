@@ -133,7 +133,7 @@
                                                     <action selector="didPressSignInButton:" destination="LfP-18-JE0" eventType="touchUpInside" id="vaL-bc-yIE"/>
                                                 </connections>
                                             </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="wvg-fJ-cV2">
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" id="wvg-fJ-cV2">
                                                 <rect key="frame" x="257" y="40" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
@@ -158,6 +158,8 @@
                         <outlet property="fieldParentView" destination="4HY-8M-7Vn" id="X2J-ao-6FQ"/>
                         <outlet property="passwordField" destination="Mtd-V8-BLx" id="x6o-Hi-Rfp"/>
                         <outlet property="scrollView" destination="CKO-Qa-km4" id="bi4-l1-Qpg"/>
+                        <outlet property="signInButton" destination="YkJ-YE-UEz" id="eAP-7p-ewJ"/>
+                        <outlet property="signinIndicator" destination="wvg-fJ-cV2" id="rie-T7-fYG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXi-WZ-y7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
