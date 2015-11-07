@@ -160,6 +160,7 @@
                         <outlet property="scrollView" destination="CKO-Qa-km4" id="bi4-l1-Qpg"/>
                         <outlet property="signInButton" destination="YkJ-YE-UEz" id="eAP-7p-ewJ"/>
                         <outlet property="signinIndicator" destination="wvg-fJ-cV2" id="rie-T7-fYG"/>
+                        <segue destination="SFY-MF-DiQ" kind="modal" identifier="signInSegue" modalTransitionStyle="crossDissolve" id="c5i-gW-qDW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXi-WZ-y7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,6 +171,27 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1437" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ecI-jm-8aN">
+            <objects>
+                <viewController id="SFY-MF-DiQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2MQ-b9-tHz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="hpL-OK-vlL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0hJ-Ht-ITn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hC8-Zh-9xv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1ge-UH-lOs">
@@ -202,5 +224,6 @@
         <image name="login_text" width="320" height="70"/>
         <image name="sign_in_buttons" width="320" height="104"/>
         <image name="sign_in_nav_bar" width="320" height="66"/>
+        <image name="welcome1" width="320" height="568"/>
     </resources>
 </document>

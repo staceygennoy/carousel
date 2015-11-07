@@ -34,20 +34,16 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         // Start animating the activity indicator
         signinIndicator.startAnimating()
         
-        // Set the Button state to "Selected"
-        signInButton.selected = true
         
         // If both the email and password fields match what we are looking for...
-        if emailField.text == "email@email.com" && passwordField.text == "1234" {
+        if emailField.text == "email" && passwordField.text == "qwe" {
             // Delay for 2 second.
             delay(2, closure: { () -> () in
                 print("valid")
                 // Stop animating the activity indicator.
                 self.signinIndicator.stopAnimating()
-                // Set the button state back to default, "Not Selected".
-                self.signInButton.selected = false
                 // perform the Segue to the next screen.
-                // self.performSegueWithIdentifier("yourSegue", sender: nil)
+                 self.performSegueWithIdentifier("signInSegue", sender: nil)
             })
             // Otherwise, email or password are incorrect so...
         } else {
