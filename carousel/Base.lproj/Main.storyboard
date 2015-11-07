@@ -135,16 +135,26 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HxI-El-kL2" appends="YES" id="Xqn-Oe-Am9"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgq-G0-bKZ"/>
                     <connections>
+                        <outlet property="fieldParentView" destination="4HY-8M-7Vn" id="X2J-ao-6FQ"/>
                         <outlet property="scrollView" destination="CKO-Qa-km4" id="bi4-l1-Qpg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXi-WZ-y7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HxI-El-kL2">
+                    <connections>
+                        <action selector="didTap:" destination="LfP-18-JE0" id="Ne5-Xv-HUz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1437" y="387"/>
         </scene>

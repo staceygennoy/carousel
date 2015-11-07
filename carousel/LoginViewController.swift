@@ -12,13 +12,35 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
 
+    @IBOutlet weak var fieldParentView: UIView!
+    
+    var initialY: CGFloat!
+    var offset: CGFloat!
+    
+    func keyboardWillShow(notification: NSNotification!) {
+        
+        fieldParentView.frame.origin.y = initialY + offset
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        
+        fieldParentView.frame.origin.y = initialY 
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initialY = fieldParentView.frame.origin.y
+        offset = -50
 
         // Do any additional setup after loading the view.
         scrollView.contentSize = scrollView.frame.size
         scrollView.contentInset.bottom = 100
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +48,10 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @IBAction func didTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 
