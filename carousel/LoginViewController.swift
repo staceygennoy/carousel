@@ -16,6 +16,10 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var buttonParentView: UIView!
     
+    @IBOutlet weak var emailField: UITextField!
+    
+    @IBOutlet weak var passwordField: UITextField!
+    
     var fieldInitialY: CGFloat!
     var fieldOffset: CGFloat!
     

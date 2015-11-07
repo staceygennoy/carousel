@@ -148,7 +148,9 @@
                     <size key="freeformSize" width="320" height="1136"/>
                     <connections>
                         <outlet property="buttonParentView" destination="dOF-5H-WFP" id="Rhh-qb-5Qb"/>
+                        <outlet property="emailField" destination="1xH-Rj-vK8" id="ve9-Qf-rbm"/>
                         <outlet property="fieldParentView" destination="4HY-8M-7Vn" id="X2J-ao-6FQ"/>
+                        <outlet property="passwordField" destination="Mtd-V8-BLx" id="x6o-Hi-Rfp"/>
                         <outlet property="scrollView" destination="CKO-Qa-km4" id="bi4-l1-Qpg"/>
                     </connections>
                 </viewController>
