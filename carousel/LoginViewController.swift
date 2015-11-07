@@ -14,17 +14,30 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var fieldParentView: UIView!
     
-    var initialY: CGFloat!
-    var offset: CGFloat!
+    @IBOutlet weak var buttonParentView: UIView!
+    
+    var fieldInitialY: CGFloat!
+    var fieldOffset: CGFloat!
+    
+    var buttonInitialY: CGFloat!
+    var buttonOffset: CGFloat!
     
     func keyboardWillShow(notification: NSNotification!) {
         
-        fieldParentView.frame.origin.y = initialY + offset
+        
+        fieldParentView.frame.origin.y = fieldInitialY + fieldOffset
+        buttonParentView.frame.origin.y = buttonInitialY + buttonOffset
+        
+        // print("Keyboard will show", buttonParentView.frame.origin.y, fieldParentView.frame.origin.y)
     }
     
     func keyboardWillHide(notification: NSNotification!) {
         
-        fieldParentView.frame.origin.y = initialY 
+        
+        fieldParentView.frame.origin.y = fieldInitialY
+        buttonParentView.frame.origin.y = buttonInitialY
+        
+        // print("Keyboard will hide", buttonParentView.frame.origin.y, fieldParentView.frame.origin.y)
     }
 
     
@@ -33,8 +46,12 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.delegate = self
         
-        initialY = fieldParentView.frame.origin.y
-        offset = -100
+        fieldInitialY = fieldParentView.frame.origin.y
+        fieldOffset = -100
+        
+        buttonInitialY = buttonParentView.frame.origin.y
+        buttonOffset = -100
+
 
         // Do any additional setup after loading the view.
         scrollView.contentSize = scrollView.frame.size

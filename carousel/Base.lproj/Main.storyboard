@@ -89,25 +89,6 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="704"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="dOF-5H-WFP" customClass="buttonParentView">
-                                        <rect key="frame" x="0.0" y="288" width="320" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kai-Dm-fBc">
-                                                <rect key="frame" x="19" y="22" width="282" height="55"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="wvg-fJ-cV2">
-                                                <rect key="frame" x="257" y="40" width="20" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </activityIndicatorView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="fhX-DH-TY7">
-                                                <rect key="frame" x="0.0" y="8" width="320" height="104"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
                                     <view contentMode="scaleToFill" id="4HY-8M-7Vn" customClass="fieldParentView">
                                         <rect key="frame" x="0.0" y="17" width="320" height="227"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,6 +115,25 @@
                                             </textField>
                                         </subviews>
                                     </view>
+                                    <view contentMode="scaleToFill" id="dOF-5H-WFP" customClass="buttonParentView">
+                                        <rect key="frame" x="0.0" y="261" width="320" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kai-Dm-fBc">
+                                                <rect key="frame" x="19" y="22" width="282" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </button>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="wvg-fJ-cV2">
+                                                <rect key="frame" x="257" y="40" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </activityIndicatorView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="fhX-DH-TY7">
+                                                <rect key="frame" x="0.0" y="8" width="320" height="104"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <connections>
@@ -147,6 +147,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1136"/>
                     <connections>
+                        <outlet property="buttonParentView" destination="dOF-5H-WFP" id="Rhh-qb-5Qb"/>
                         <outlet property="fieldParentView" destination="4HY-8M-7Vn" id="X2J-ao-6FQ"/>
                         <outlet property="scrollView" destination="CKO-Qa-km4" id="bi4-l1-Qpg"/>
                     </connections>
