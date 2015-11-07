@@ -20,6 +20,14 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBAction func didPressBackButton(sender: AnyObject) {
+        print("Did press back button")
+    }
+    
+    @IBAction func didPressSignInButton(sender: AnyObject) {
+        print("Did press sign in button")
+    }
+    
     var fieldInitialY: CGFloat!
     var fieldOffset: CGFloat!
     
