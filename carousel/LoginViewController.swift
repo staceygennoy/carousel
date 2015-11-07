@@ -38,9 +38,10 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         signInButton.selected = true
         
         // If both the email and password fields match what we are looking for...
-        if emailField.text == "Text we are looking for" && passwordField.text == "Other text we are looking for" {
+        if emailField.text == "email@email.com" && passwordField.text == "1234" {
             // Delay for 2 second.
             delay(2, closure: { () -> () in
+                print("valid")
                 // Stop animating the activity indicator.
                 self.signinIndicator.stopAnimating()
                 // Set the button state back to default, "Not Selected".
@@ -52,11 +53,20 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         } else {
             // Delay for 2 second
             delay(2, closure: { () -> () in
+                print("invalid")
                 // Stop animating the activity indicator.
                 self.signinIndicator.stopAnimating()
                 // Set the button state back to default, "Not Selected".
                 self.signInButton.selected = false
                 // Create and Show UIAlertController...see guide, Using UIAlertController
+                let alert = UIAlertController(title: "Oops", message: "Incorrect email or password", preferredStyle: UIAlertControllerStyle.Alert)
+                
+                let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+                
+                alert.addAction(okAction)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+                
             })
         }
     }
