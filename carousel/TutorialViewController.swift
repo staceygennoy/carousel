@@ -8,11 +8,13 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var pageControl: UIPageControl!
+    
+    @IBOutlet weak var scrollViewDidEndDecelerating: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,31 +24,23 @@ class TutorialViewController: UIViewController {
         let pageWidth = scrollView.bounds.width
         let pageHeight = scrollView.bounds.height
         
-        scrollView.contentSize = CGSizeMake(3*pageWidth, pageHeight)
+        scrollView.contentSize = CGSizeMake(4*pageWidth, pageHeight)
         scrollView.pagingEnabled = true
         scrollView.showsHorizontalScrollIndicator = false
         
-        let view1 = UIView(frame: CGRectMake(0, 0, pageWidth, pageHeight))
-        view1.backgroundColor = UIColor.blueColor()
-        let view2 = UIView(frame: CGRectMake(pageWidth, 0, pageWidth, pageHeight))
-        view2.backgroundColor = UIColor.orangeColor()
-        let view3 = UIView(frame: CGRectMake(2*pageWidth, 0, pageWidth, pageHeight))
-        view3.backgroundColor = UIColor.purpleColor()
-        
-        scrollView.addSubview(view1)
-        scrollView.addSubview(view2)
-        scrollView.addSubview(view3)
-        
-       // scrollView.delegate = self
-        pageControl.numberOfPages = 3
-        
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       scrollView.delegate = self
+    
+        
     }
     
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        // Get the current page based on the scroll offset
+        let page : Int = Int(round(scrollView.contentOffset.x / 320))
+        
+        // Set the current page, so the dots will update
+        pageControl.currentPage = page
+    }
 
     /*
     // MARK: - Navigation
