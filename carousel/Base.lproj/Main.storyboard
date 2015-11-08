@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="LfP-18-JE0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rVr-1P-wKd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -172,6 +172,54 @@
             </objects>
             <point key="canvasLocation" x="1437" y="387"/>
         </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="8OO-6j-OyH">
+            <objects>
+                <viewController id="rVr-1P-wKd" customClass="TutorialViewController" customModule="carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEf-VA-JlE">
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="z8X-E5-saD">
+                                <rect key="frame" x="0.0" y="0.0" width="1280" height="1300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="1lZ-tG-u09">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome2" id="6p6-O2-rpq">
+                                        <rect key="frame" x="321" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome3" id="aLa-B9-yu1">
+                                        <rect key="frame" x="642" y="-1" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome4" id="fd5-zd-quR">
+                                        <rect key="frame" x="958" y="-1" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="fNF-Qp-Fmc">
+                                <rect key="frame" x="620" y="266" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1280" height="568"/>
+                    <connections>
+                        <outlet property="pageControl" destination="fNF-Qp-Fmc" id="bBW-YQ-9or"/>
+                        <outlet property="scrollView" destination="z8X-E5-saD" id="B5O-17-o2m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6g6-et-DEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="1682"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ecI-jm-8aN">
             <objects>
@@ -225,5 +273,8 @@
         <image name="sign_in_buttons" width="320" height="104"/>
         <image name="sign_in_nav_bar" width="320" height="66"/>
         <image name="welcome1" width="320" height="568"/>
+        <image name="welcome2" width="320" height="568"/>
+        <image name="welcome3" width="320" height="568"/>
+        <image name="welcome4" width="320" height="568"/>
     </resources>
 </document>

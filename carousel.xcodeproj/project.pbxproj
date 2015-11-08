@@ -16,6 +16,7 @@
 		01DADC001BEC64A10028B203 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBFF1BEC64A10028B203 /* Common.swift */; };
 		01DADC021BEC65860028B203 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADC011BEC65860028B203 /* IntroViewController.swift */; };
 		01DADC041BEDBF150028B203 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADC031BEDBF150028B203 /* LoginViewController.swift */; };
+		01DADC061BEF14370028B203 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADC051BEF14370028B203 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		01DADBFF1BEC64A10028B203 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		01DADC011BEC65860028B203 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		01DADC031BEDBF150028B203 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		01DADC051BEF14370028B203 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				01DADBEB1BEC61780028B203 /* AppDelegate.swift */,
 				01DADBED1BEC61780028B203 /* ViewController.swift */,
 				01DADBEF1BEC61780028B203 /* Main.storyboard */,
+				01DADC051BEF14370028B203 /* TutorialViewController.swift */,
 				01DADC031BEDBF150028B203 /* LoginViewController.swift */,
 				01DADC011BEC65860028B203 /* IntroViewController.swift */,
 				01DADBFF1BEC64A10028B203 /* Common.swift */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DADC041BEDBF150028B203 /* LoginViewController.swift in Sources */,
+				01DADC061BEF14370028B203 /* TutorialViewController.swift in Sources */,
 				01DADC021BEC65860028B203 /* IntroViewController.swift in Sources */,
 				01DADC001BEC64A10028B203 /* Common.swift in Sources */,
 				01DADBFE1BEC62DD0028B203 /* README.md in Sources */,
