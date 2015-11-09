@@ -10,6 +10,9 @@ import UIKit
 
 class ConversationsViewController: UIViewController {
 
+    @IBOutlet weak var didTapBack: UIButton!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,8 +22,13 @@ class ConversationsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+       
     }
     
+    @IBAction func didTapBackButton(sender: AnyObject) {
+        navigationController?.popToRootViewControllerAnimated(true)
+
+    }
 
     /*
     // MARK: - Navigation
