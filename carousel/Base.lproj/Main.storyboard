@@ -86,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="didPressBackButton:" destination="LfP-18-JE0" eventType="touchUpInside" id="uZ7-wp-vPq"/>
-                                    <segue destination="rVr-1P-wKd" kind="modal" modalTransitionStyle="crossDissolve" id="GVf-0e-vJt"/>
+                                    <segue destination="rVr-1P-wKd" kind="modal" identifier="signInSegue" modalTransitionStyle="crossDissolve" id="GVf-0e-vJt"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CKO-Qa-km4">
@@ -344,7 +344,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VhJ-Qo-X2d">
                                         <rect key="frame" x="977" y="498" width="279" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <segue destination="LfP-18-JE0" kind="modal" id="fgT-kp-U9b"/>
                                         </connections>
@@ -433,6 +432,6 @@
         <image name="welcome4" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZQV-F5-gT9"/>
+        <segue reference="fgT-kp-U9b"/>
     </inferredMetricsTieBreakers>
 </document>
