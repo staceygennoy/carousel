@@ -9,18 +9,42 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var closeButton: UIButton!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var navImage: UIImageView!
+    
+    @IBOutlet weak var signOutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+         scrollView.contentSize = imageView.image!.size
     }
 
+    
+    @IBAction func didPressCloseButton(sender: AnyObject) {
+        print("did press close button")
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func didPressSignOutButton(sender: AnyObject) {
+        print("did press sign out button")
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+
 
     /*
     // MARK: - Navigation
