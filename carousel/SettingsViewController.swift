@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var navImage: UIImageView!
-    
+
     @IBOutlet weak var signOutButton: UIButton!
     
     override func viewDidLoad() {
@@ -34,10 +34,10 @@ class SettingsViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+  
     @IBAction func didPressSignOutButton(sender: AnyObject) {
-        print("did press sign out button")
+         print("did press sign out button")
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
