@@ -2,7 +2,7 @@
 
 ## My sample carousel app
 
-#### Hours to complete: 12
+#### Hours to complete: 12-15
 
 #### All required stories complete
 
