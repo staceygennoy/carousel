@@ -17,6 +17,7 @@
 		01DADC021BEC65860028B203 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADC011BEC65860028B203 /* IntroViewController.swift */; };
 		01DADC041BEDBF150028B203 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADC031BEDBF150028B203 /* LoginViewController.swift */; };
 		01DADC061BEF14370028B203 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADC051BEF14370028B203 /* TutorialViewController.swift */; };
+		01F6CE341BF02CCE00D6C2BA /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6CE331BF02CCE00D6C2BA /* TimelineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		01DADC011BEC65860028B203 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		01DADC031BEDBF150028B203 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01DADC051BEF14370028B203 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		01F6CE331BF02CCE00D6C2BA /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				01DADBEB1BEC61780028B203 /* AppDelegate.swift */,
 				01DADBED1BEC61780028B203 /* ViewController.swift */,
 				01DADBEF1BEC61780028B203 /* Main.storyboard */,
+				01F6CE331BF02CCE00D6C2BA /* TimelineViewController.swift */,
 				01DADC051BEF14370028B203 /* TutorialViewController.swift */,
 				01DADC031BEDBF150028B203 /* LoginViewController.swift */,
 				01DADC011BEC65860028B203 /* IntroViewController.swift */,
@@ -155,6 +158,7 @@
 				01DADC021BEC65860028B203 /* IntroViewController.swift in Sources */,
 				01DADC001BEC64A10028B203 /* Common.swift in Sources */,
 				01DADBFE1BEC62DD0028B203 /* README.md in Sources */,
+				01F6CE341BF02CCE00D6C2BA /* TimelineViewController.swift in Sources */,
 				01DADBEE1BEC61780028B203 /* ViewController.swift in Sources */,
 				01DADBEC1BEC61780028B203 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +308,7 @@
 				01DADBFC1BEC61780028B203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
