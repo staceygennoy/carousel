@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01C814581BF0360700580550 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C814571BF0360700580550 /* ConversationsViewController.swift */; };
+		01C8145A1BF0365600580550 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C814591BF0365600580550 /* SettingsViewController.swift */; };
 		01DADBEC1BEC61780028B203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBEB1BEC61780028B203 /* AppDelegate.swift */; };
 		01DADBEE1BEC61780028B203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBED1BEC61780028B203 /* ViewController.swift */; };
 		01DADBF11BEC61780028B203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DADBEF1BEC61780028B203 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01C814571BF0360700580550 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		01C814591BF0365600580550 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		01DADBE81BEC61780028B203 /* carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DADBEB1BEC61780028B203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DADBED1BEC61780028B203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				01DADBEB1BEC61780028B203 /* AppDelegate.swift */,
 				01DADBED1BEC61780028B203 /* ViewController.swift */,
 				01DADBEF1BEC61780028B203 /* Main.storyboard */,
+				01C814591BF0365600580550 /* SettingsViewController.swift */,
+				01C814571BF0360700580550 /* ConversationsViewController.swift */,
 				01F6CE331BF02CCE00D6C2BA /* TimelineViewController.swift */,
 				01DADC051BEF14370028B203 /* TutorialViewController.swift */,
 				01DADC031BEDBF150028B203 /* LoginViewController.swift */,
@@ -156,9 +162,11 @@
 				01DADC041BEDBF150028B203 /* LoginViewController.swift in Sources */,
 				01DADC061BEF14370028B203 /* TutorialViewController.swift in Sources */,
 				01DADC021BEC65860028B203 /* IntroViewController.swift in Sources */,
+				01C8145A1BF0365600580550 /* SettingsViewController.swift in Sources */,
 				01DADC001BEC64A10028B203 /* Common.swift in Sources */,
 				01DADBFE1BEC62DD0028B203 /* README.md in Sources */,
 				01F6CE341BF02CCE00D6C2BA /* TimelineViewController.swift in Sources */,
+				01C814581BF0360700580550 /* ConversationsViewController.swift in Sources */,
 				01DADBEE1BEC61780028B203 /* ViewController.swift in Sources */,
 				01DADBEC1BEC61780028B203 /* AppDelegate.swift in Sources */,
 			);
